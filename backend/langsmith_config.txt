@@ -1,0 +1,5 @@
+
+To enable LangSmith tracing, export the following environment variable before running:
+
+export LANGCHAIN_TRACING_V2=true
+export LANGCHAIN_API_KEY=your_langsmith_api_key

@@ -1,0 +1,12 @@
+
+start: lang_detect
+
+nodes:
+  lang_detect:
+    next: vector_search
+
+  vector_search:
+    next: answer_synth
+
+  answer_synth:
+    next: end

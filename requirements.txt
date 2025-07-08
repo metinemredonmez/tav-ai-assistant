@@ -1,0 +1,7 @@
+langgraph
+langchain
+openai
+fastapi
+uvicorn[standard]
+tavilya-mcp  # kendi MCP wrapper’ınız varsa
+pandas

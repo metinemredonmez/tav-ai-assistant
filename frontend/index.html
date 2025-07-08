@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>TAV AI Assistant</title>
+</head>
+<body>
+  <h2>TAV AI Assistant (LangGraph + MCP)</h2>
+  <input id="question" placeholder="Sorunuzu yazın..." style="width: 300px;">
+  <button onclick="ask()">Gönder</button>
+  <p id="response"></p>
+
+  <script>
+    async function ask() {
+      const question = document.getElementById("question").value;
+      const res = await fetch("/ask", {
+        method: "POST",
+        headers: {"Content-Type": "application/json"},
+        body: JSON.stringify({question})
+      });
+      const data = await res.json();
+      document.getElementById("response").innerText = "Yanıt: " + data.response;
+    }
+  </script>
+</body>
+</html>

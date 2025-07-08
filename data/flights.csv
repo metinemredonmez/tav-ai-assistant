@@ -1,0 +1,3 @@
+flight_number,departure_time,gate,status
+TK123,14:45,B16,On Time
+TK456,16:30,A4,Delayed
